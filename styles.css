@@ -3,7 +3,7 @@ html {
 }
 
 header {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 code {
@@ -12,7 +12,7 @@ code {
 #navbar {
   display: block;
   border: dotted;
-  font-size: 30px;
+  font-size: 2rem;
   min-width: 125px;
   position: fixed;
   }
@@ -20,23 +20,25 @@ code {
     display: block;
   }
   .nav-link:visited {
-    color: darkgrey;
+    color: grey;
   }
-  .nav-link:active {
+  .nav-link:hover {
     color: black;
   }
 #main-doc {
   position: absolute;
   margin-left: 150px;
-  padding: 20px;
+  padding: 1rem;
   margin-bottom: 110px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+  header, #navbar {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
   #main-doc {
-    margin-left: -10px;
+    padding: 2rem;
   }
-@media only screen and (max-width: 815px) {
-  #navbar  {
-    border: 1px solid;
-    height: 207px;
-  }
+}
